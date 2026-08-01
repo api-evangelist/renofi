@@ -1,7 +1,29 @@
 aid: renofi
-name: Renofi
-description: Renofi is a company surfaced as a portfolio company of canaan-partners and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/renofi.png
+name: RenoFi
+description: >-
+  RenoFi is a home-renovation financing platform that partners with credit
+  unions and lenders to offer renovation-specific loans underwritten against a
+  home's projected after-renovation value (ARV) rather than its current equity,
+  letting homeowners borrow significantly more without refinancing their first
+  mortgage. RenoFi is not itself a lender: it originates and prepares
+  applications, performs renovation underwriting, and connects homeowners,
+  contractors, realtors, and credit-union partners to its lending network for
+  RenoFi Home Equity Loans and HELOCs. The company maintains a public GitHub
+  organization of open-source Ruby infrastructure libraries (GraphQL and
+  Salesforce tooling) but publishes no public product API, OpenAPI definition,
+  or developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/renofi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +33,47 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Fintech
+- Lending
+- Home Improvement
+- Real Estate
+- Mortgage
+- Home Equity
+- Renovation Financing
 apis: []
+common:
+- type: DomainSecurity
+  url: security/renofi-domain-security.yml
+- type: Website
+  url: https://www.renofi.com/
+- type: About
+  url: https://www.renofi.com/about/
+- type: Support
+  url: https://www.renofi.com/faq/
+- type: Blog
+  url: https://www.renofi.com/h/renovation-loans/
+- type: SignUp
+  url: https://qualify.renofi.com/
+- type: Login
+  url: https://login.renofi.com/
+- type: TermsOfService
+  url: https://www.renofi.com/notices/legal/
+- type: PrivacyPolicy
+  url: https://www.renofi.com/notices/privacy/
+- type: GitHubOrganization
+  url: https://github.com/RenoFi
+- type: Contact
+  url: https://www.renofi.com/contact/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
